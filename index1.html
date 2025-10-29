@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIGO Branding Consultancy - AI-Powered Services</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom font family setting */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1222; /* Deep Navy Background */
+            color: #e5e7eb; /* Light Gray Text */
+        }
+        /* Custom color definitions */
+        .bg-navy-deep { background-color: #0d1222; }
+        .bg-card-dark { background-color: #1e293b; }
+        .text-primary-blue { color: #3b82f6; }
+        .btn-primary {
+            background-color: #3b82f6;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        .btn-primary:hover {
+            background-color: #2563eb;
+            transform: translateY(-1px);
+        }
+        .btn-secondary {
+            border: 2px solid #3b82f6;
+            color: #3b82f6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn-secondary:hover {
+            background-color: #3b82f6;
+            color: #ffffff;
+        }
+
+        /* Gradient/Pattern for Hero Section - Mimicking the tech background */
+        .hero-pattern {
+            background-image:
+                radial-gradient(circle at 10% 10%, rgba(59, 130, 246, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 90%, rgba(59, 130, 246, 0.15) 0%, transparent 30%),
+                repeating-linear-gradient(0deg, #0d1222, #0d1222 10px, #1e293b10 10px, #1e293b10 11px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header id="home" class="sticky top-0 z-50 bg-navy-deep/95 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 text-xl font-bold text-white tracking-widest">
+                    aigo<span class="text-primary-blue">.</span>
+                </div>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#home" class="text-white hover:text-primary-blue transition-colors">Home</a>
+                    <a href="#about" class="text-white hover:text-primary-blue transition-colors">About</a>
+                    <a href="#services" class="text-white hover:text-primary-blue transition-colors">Services</a>
+                    <a href="#portfolio" class="text-white hover:text-primary-blue transition-colors">Portfolio</a>
+                    <a href="#testimonials" class="text-white hover:text-primary-blue transition-colors">Testimonials</a>
+                    <a href="#blog" class="text-white hover:text-primary-blue transition-colors">Blog</a>
+                    <a href="#contact" class="text-white hover:text-primary-blue transition-colors">Contact</a>
+                </nav>
+                <!-- Mobile Menu Button (Placeholder for simplicity, full mobile menu omitted) -->
+                <button class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-pattern min-h-screen flex items-center justify-center text-center pt-16 pb-20">
+            <div class="max-w-4xl px-4">
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight">
+                    Empowering Brands <br class="hidden sm:block">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-cyan-400">with AI</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                    Transform your brand identity with cutting-edge AI technology. We create intelligent branding solutions that resonate with your audience and drive business growth.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="btn-primary px-8 py-3 rounded-xl font-semibold text-white shadow-lg">
+                        Book Free Consultation
+                    </a>
+                    <a href="#services" class="btn-secondary px-8 py-3 rounded-xl font-semibold">
+                        Explore Services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-card-dark/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <h2 class="text-4xl font-bold text-white mb-4">About AIGO Branding Consultancy</h2>
+                        <p class="text-gray-400 leading-relaxed">
+                            We are a forward-thinking branding consultancy that harnesses the power of **Artificial Intelligence** to create compelling brand experiences. Our team combines creative expertise with cutting-edge technology to deliver results that exceed expectations.
+                        </p>
+                        <p class="text-gray-400 leading-relaxed">
+                            Founded on the belief that AI can revolutionize branding, we are a collective of experts who specialize in creating data-driven branding strategies that are both innovative and effective.
+                        </p>
+                        <!-- Stats -->
+                        <div class="flex space-x-12 pt-4">
+                            <div>
+                                <p class="text-4xl font-extrabold text-primary-blue">150+</p>
+                                <p class="text-gray-400 text-sm">Brands Transformed</p>
+                            </div>
+                            <div>
+                                <p class="text-4xl font-extrabold text-primary-blue">98%</p>
+                                <p class="text-gray-400 text-sm">Client Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Image Placeholder -->
+                    <div class="rounded-xl overflow-hidden shadow-2xl">
+                        <img src="https://placehold.co/600x400/1e293b/ffffff?text=Team+Meeting+Image" alt="Team discussing AI branding strategy" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI-Powered Services Section -->
+        <section id="services" class="py-20 bg-navy-deep">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">AI-Powered Services</h2>
+                <p class="text-lg text-gray-400 mb-16 max-w-3xl mx-auto">
+                    Our comprehensive suite of AI-enhanced branding services helps businesses create powerful, memorable brand identities that drive results.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card Template -->
+                    <div class="bg-card-dark p-8 rounded-xl shadow-xl text-left border border-slate-700/50 hover:border-primary-blue/50 transition-all">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <!-- Icon -->
+                            <div class="p-3 rounded-full bg-primary-blue/20">
+                                <svg class="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.79 2-4 2s-4-.895-4-2 1.79-2 4-2 4 .895 4 2zm12-3c0 1.105-1.79 2-4 2s-4-.895-4-2 1.79-2 4-2 4 .895 4 2zM9 10l12-3"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">AI Brand Strategy</h3>
+                        </div>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            Leverage machine learning algorithms to analyze market trends, consumer behavior, and competitive landscapes for optimal brand positioning.
+                        </p>
+                        <ul class="text-gray-500 text-xs space-y-1 pl-4 list-disc marker:text-primary-blue">
+                            <li>Market Analysis & Insights</li>
+                            <li>Consumer Behavior Prediction</li>
+                            <li>Competitive Intelligence</li>
+                            <li>Brand Positioning Strategy</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="bg-card-dark p-8 rounded-xl shadow-xl text-left border border-slate-700/50 hover:border-primary-blue/50 transition-all">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="p-3 rounded-full bg-primary-blue/20">
+                                <svg class="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-12 5h8a2 2 0 002-2v-7a2 2 0 00-2-2H8a2 2 0 00-2 2v7a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">AI Visual Identity</h3>
+                        </div>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            Create stunning visual identities using AI-powered design tools that ensure consistency and impact across all brand touchpoints.
+                        </p>
+                        <ul class="text-gray-500 text-xs space-y-1 pl-4 list-disc marker:text-primary-blue">
+                            <li>Logo Design & Optimization</li>
+                            <li>Color Palette Generation</li>
+                            <li>Typography Selection</li>
+                            <li>Brand Guidelines Creation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="bg-card-dark p-8 rounded-xl shadow-xl text-left border border-slate-700/50 hover:border-primary-blue/50 transition-all">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="p-3 rounded-full bg-primary-blue/20">
+                                <svg class="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">AI Content Strategy</h3>
+                        </div>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            Develop compelling brand narratives and engaging content powered by natural language processing and sentiment analysis.
+                        </p>
+                        <ul class="text-gray-500 text-xs space-y-1 pl-4 list-disc marker:text-primary-blue">
+                            <li>Brand Voice Development</li>
+                            <li>SEO Optimization</li>
+                            <li>Messaging Framework</li>
+                            <li>Campaign Strategy</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="bg-card-dark p-8 rounded-xl shadow-xl text-left border border-slate-700/50 hover:border-primary-blue/50 transition-all">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="p-3 rounded-full bg-primary-blue/20">
+                                <svg class="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2-12h12a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2z"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">AI Performance Analytics</h3>
+                        </div>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            Measure and optimize brand performance with advanced analytics and predictive modeling to maximize ROI.
+                        </p>
+                        <ul class="text-gray-500 text-xs space-y-1 pl-4 list-disc marker:text-primary-blue">
+                            <li>Brand Performance Tracking</li>
+                            <li>Predictive Analytics</li>
+                            <li>ROI Optimization</li>
+                            <li>Real-time Insights</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div class="bg-card-dark p-8 rounded-xl shadow-xl text-left border border-slate-700/50 hover:border-primary-blue/50 transition-all">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="p-3 rounded-full bg-primary-blue/20">
+                                <svg class="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">AI Digital Transformation</h3>
+                        </div>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            Transform your digital presence with AI-enhanced websites, applications, and digital experiences that engage and convert.
+                        </p>
+                        <ul class="text-gray-500 text-xs space-y-1 pl-4 list-disc marker:text-primary-blue">
+                            <li>Website Optimization</li>
+                            <li>User Experience Design</li>
+                            <li>Digital Asset Creation</li>
+                            <li>Conversion Optimization</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service Card 6 -->
+                    <div class="bg-card-dark p-8 rounded-xl shadow-xl text-left border border-slate-700/50 hover:border-primary-blue/50 transition-all">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="p-3 rounded-full bg-primary-blue/20">
+                                <svg class="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m-4.632-2.828L7.68 1.956M6.34 7.757L4.929 6.343m10.12 10.12l3.536 3.536M15.01 10.828l3.182-3.182m-4.502 6.364l4.502 4.502M12 20.25c-4.512 0-8.25-3.738-8.25-8.25S7.488 3.75 12 3.75s8.25 3.738 8.25 8.25-3.738 8.25-8.25 8.25z"></path></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">AI Customer Experience</h3>
+                        </div>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            Enhance customer interactions with AI-powered chatbots, personalization engines, and predictive customer service solutions.
+                        </p>
+                        <ul class="text-gray-500 text-xs space-y-1 pl-4 list-disc marker:text-primary-blue">
+                            <li>Chatbot Development</li>
+                            <li>Personalization Engine</li>
+                            <li>Customer Journey Mapping</li>
+                            <li>Predictive Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Transformations Section -->
+        <section id="portfolio" class="py-20 bg-card-dark/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Portfolio Transformations</h2>
+                <p class="text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
+                    See how we've helped brands across industries achieve remarkable transformations through AI-powered branding solutions.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Portfolio Item 1 -->
+                    <div class="bg-card-dark rounded-xl shadow-xl overflow-hidden">
+                        <div class="flex">
+                            <img src="https://placehold.co/300x200/222d41/ffffff?text=BEFORE" alt="Before branding for TechFlow" class="w-1/2 h-auto object-cover">
+                            <img src="https://placehold.co/300x200/3b82f6/ffffff?text=AFTER" alt="After branding for TechFlow" class="w-1/2 h-auto object-cover">
+                        </div>
+                        <div class="p-6 text-left">
+                            <h4 class="text-xl font-bold text-white mb-2">TechFlow Startup</h4>
+                            <p class="text-gray-400 text-sm mb-4">
+                                Complete brand transformation for a fintech startup, resulting in **300% increase in user engagement**.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs font-medium px-3 py-1 rounded-full bg-primary-blue/20 text-primary-blue">AI Strategy</span>
+                                <span class="text-xs font-medium px-3 py-1 rounded-full bg-primary-blue/20 text-primary-blue">Visual Identity</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 2 -->
+                    <div class="bg-card-dark rounded-xl shadow-xl overflow-hidden">
+                        <div class="flex">
+                            <img src="https://placehold.co/300x200/222d41/ffffff?text=BEFORE" alt="Before branding for GreenLeaf E-commerce" class="w-1/2 h-auto object-cover">
+                            <img src="https://placehold.co/300x200/3b82f6/ffffff?text=AFTER" alt="After branding for GreenLeaf E-commerce" class="w-1/2 h-auto object-cover">
+                        </div>
+                        <div class="p-6 text-left">
+                            <h4 class="text-xl font-bold text-white mb-2">GreenLeaf E-commerce</h4>
+                            <p class="text-gray-400 text-sm mb-4">
+                                Optimized sales campaigns that increased online sales by **250%** through AI-powered customer insights.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs font-medium px-3 py-1 rounded-full bg-primary-blue/20 text-primary-blue">Digital Transform</span>
+                                <span class="text-xs font-medium px-3 py-1 rounded-full bg-primary-blue/20 text-primary-blue">Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 3 -->
+                    <div class="bg-card-dark rounded-xl shadow-xl overflow-hidden md:col-span-2 lg:col-span-1">
+                        <div class="flex">
+                            <img src="https://placehold.co/300x200/222d41/ffffff?text=BEFORE" alt="Before branding for MedCare Health" class="w-1/2 h-auto object-cover">
+                            <img src="https://placehold.co/300x200/3b82f6/ffffff?text=AFTER" alt="After branding for MedCare Health" class="w-1/2 h-auto object-cover">
+                        </div>
+                        <div class="p-6 text-left">
+                            <h4 class="text-xl font-bold text-white mb-2">MedCare Health</h4>
+                            <p class="text-gray-400 text-sm mb-4">
+                                Healthcare brand redesign that improved customer trust scores by **100%** using AI sentiment analysis.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs font-medium px-3 py-1 rounded-full bg-primary-blue/20 text-primary-blue">Brand Strategy</span>
+                                <span class="text-xs font-medium px-3 py-1 rounded-full bg-primary-blue/20 text-primary-blue">Content Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                    <a href="#" class="btn-primary inline-block px-10 py-3 rounded-xl font-semibold text-white shadow-lg">
+                        View Full Portfolio
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-navy-deep">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Client Testimonials</h2>
+                <p class="text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
+                    Hear from our satisfied clients about their transformative experiences with AIGO Branding Consultancy.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Testimonial Card 1 -->
+                    <div class="bg-card-dark p-8 rounded-xl shadow-xl text-left border border-slate-700/50">
+                        <div class="flex items-start mb-4">
+                            <!-- Profile Picture Placeholder -->
+                            <img src="https://placehold.co/56x56/3b82f6/ffffff?text=SJ" alt="Sarah Johnson" class="w-14 h-14 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="text-lg font-bold text-white">Sarah Johnson</h4>
+                                <p class="text-sm text-primary-blue">CEO, TechFlow Startup</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 italic mb-4">
+                            "AIGO transformed our brand identity beyond our expectations. Their AI-powered approach helped us understand our audience better and create a brand that truly resonated. Our user engagement increased by 300%!"
+                        </p>
+                        <!-- 5 Star Rating -->
+                        <div class="text-yellow-400 text-xl leading-none">
+                            ★★★★★
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 2 -->
+                    <div class="bg-card-dark p-8 rounded-xl shadow-xl text-left border border-slate-700/50">
+                        <div class="flex items-start mb-4">
+                            <!-- Profile Picture Placeholder -->
+                            <img src="https://placehold.co/56x56/3b82f6/ffffff?text=MC" alt="Michael Chen" class="w-14 h-14 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="text-lg font-bold text-white">Michael Chen</h4>
+                                <p class="text-sm text-primary-blue">Founder, GreenLeaf E-commerce</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 italic mb-4">
+                            "The team at AIGO doesn't just create beautiful designs - they create **intelligent solutions**. Their AI insights helped us optimize our brand for our target market, resulting in a 250% increase in sales."
+                        </p>
+                        <!-- 5 Star Rating -->
+                        <div class="text-yellow-400 text-xl leading-none">
+                            ★★★★★
+                        </div>
+                    </div>
+
+                     <!-- Testimonial Card 3 -->
+                    <div class="bg-card-dark p-8 rounded-xl shadow-xl text-left border border-slate-700/50">
+                        <div class="flex items-start mb-4">
+                            <!-- Profile Picture Placeholder -->
+                            <img src="https://placehold.co/56x56/3b82f6/ffffff?text=DR" alt="Dr. Emily Rodriguez" class="w-14 h-14 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="text-lg font-bold text-white">Dr. Emily Rodriguez</h4>
+                                <p class="text-sm text-primary-blue">Director, MedCare Health</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 italic mb-4">
+                            "AIGO's AI-powered approach to healthcare marketing was revolutionary. They helped us build trust with patients and improve human-insights, improving our patient satisfaction scores by 100%."
+                        </p>
+                        <!-- 5 Star Rating -->
+                        <div class="text-yellow-400 text-xl leading-none">
+                            ★★★★★
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Insights / Blog Section -->
+        <section id="blog" class="py-20 bg-card-dark/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Latest Insights</h2>
+                <p class="text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
+                    Stay updated with the latest trends in AI-powered branding and digital transformation strategies.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Blog Post 1 -->
+                    <div class="bg-card-dark rounded-xl shadow-xl overflow-hidden text-left">
+                        <img src="https://placehold.co/400x250/000033/3b82f6?text=AI+Brain+Image" alt="The Future of AI in Branding" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <p class="text-xs text-gray-500 mb-2">March 15, 2024</p>
+                            <h4 class="text-xl font-bold text-white mb-2">The Future of AI in Branding: What to Expect in 2024</h4>
+                            <p class="text-gray-400 text-sm mb-4">
+                                Discover how artificial intelligence is fundamentally revolutionizing brand strategy and what innovative approaches await in the coming year.
+                            </p>
+                            <a href="#" class="text-primary-blue text-sm font-medium hover:underline">Read More &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 2 -->
+                    <div class="bg-card-dark rounded-xl shadow-xl overflow-hidden text-left">
+                        <img src="https://placehold.co/400x250/000033/3b82f6?text=Data+Analytics+Graphs" alt="Data-Driven Branding" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <p class="text-xs text-gray-500 mb-2">March 10, 2024</p>
+                            <h4 class="text-xl font-bold text-white mb-2">Data-Driven Branding: How Analytics Transform Identity</h4>
+                            <p class="text-gray-400 text-sm mb-4">
+                                Learn how to leverage data analytics to create more effective brand strategies that resonate with your target audience.
+                            </p>
+                            <a href="#" class="text-primary-blue text-sm font-medium hover:underline">Read More &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 3 -->
+                    <div class="bg-card-dark rounded-xl shadow-xl overflow-hidden text-left">
+                        <img src="https://placehold.co/400x250/000033/3b82f6?text=Creative+Team+Working" alt="AI-Enhanced Creative Process" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <p class="text-xs text-gray-500 mb-2">March 5, 2024</p>
+                            <h4 class="text-xl font-bold text-white mb-2">AI-Enhanced Creative Process: Boosting Design Efficiency</h4>
+                            <p class="text-gray-400 text-sm mb-4">
+                                Explore how AI tools are enhancing creative workflows and helping designers produce better results in less time.
+                            </p>
+                            <a href="#" class="text-primary-blue text-sm font-medium hover:underline">Read More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                    <a href="#" class="btn-primary inline-block px-10 py-3 rounded-xl font-semibold text-white shadow-lg">
+                        View All Articles
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get in Touch / Contact Section -->
+        <section id="contact" class="py-20 bg-navy-deep">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Get in Touch</h2>
+                    <p class="text-lg text-gray-400 max-w-3xl mx-auto">
+                        Ready to transform your brand with AI? Let's discuss how we can help you achieve your branding goals.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 bg-card-dark p-8 md:p-12 rounded-xl shadow-2xl border border-slate-700/50">
+                    <!-- Contact Information -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-bold text-white mb-4 border-b border-primary-blue/30 pb-2 inline-block">Contact Information</h3>
+                        <div class="flex items-center space-x-3">
+                            <!-- Phone Icon -->
+                            <svg class="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.5l1.5 4.5L7 11.5l-4 4a12 12 0 0012 12l4-4 4.5-1.5V19a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2z"></path></svg>
+                            <div>
+                                <p class="text-sm text-gray-400">Phone</p>
+                                <p class="text-white font-medium">+91 9876543210</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <!-- Email Icon -->
+                            <svg class="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 4v7a2 2 0 01-2 2H5a2 2 0 01-2-2v-7"></path></svg>
+                            <div>
+                                <p class="text-sm text-gray-400">Email</p>
+                                <p class="text-white font-medium">consultancy@aigobranding.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <!-- Clock Icon -->
+                            <svg class="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <div>
+                                <p class="text-sm text-gray-400">Business Hours</p>
+                                <p class="text-white font-medium">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="space-y-4">
+                        <label for="full-name" class="sr-only">Full Name</label>
+                        <input type="text" id="full-name" placeholder="Enter your full name" required
+                               class="w-full px-4 py-3 rounded-lg bg-navy-deep border border-slate-700 focus:ring-primary-blue focus:border-primary-blue text-white placeholder-gray-500">
+
+                        <label for="email-address" class="sr-only">Email Address</label>
+                        <input type="email" id="email-address" placeholder="Enter your email address" required
+                               class="w-full px-4 py-3 rounded-lg bg-navy-deep border border-slate-700 focus:ring-primary-blue focus:border-primary-blue text-white placeholder-gray-500">
+
+                        <label for="company-name" class="sr-only">Company</label>
+                        <input type="text" id="company-name" placeholder="Enter your company name"
+                               class="w-full px-4 py-3 rounded-lg bg-navy-deep border border-slate-700 focus:ring-primary-blue focus:border-primary-blue text-white placeholder-gray-500">
+
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea id="message" rows="4" placeholder="Tell us about your project..." required
+                                  class="w-full px-4 py-3 rounded-lg bg-navy-deep border border-slate-700 focus:ring-primary-blue focus:border-primary-blue text-white placeholder-gray-500"></textarea>
+
+                        <button type="submit" class="w-full btn-primary px-8 py-3 rounded-xl font-semibold text-white shadow-lg">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-deep border-t border-slate-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <!-- Col 1: Logo & Description -->
+                <div class="col-span-2 md:col-span-2 space-y-4">
+                    <div class="text-2xl font-bold text-white tracking-widest">
+                        aigo<span class="text-primary-blue">.</span>
+                    </div>
+                    <p class="text-gray-400 text-sm max-w-sm">
+                        Empowering brands worldwide with AI-driven solutions for the digital age.
+                    </p>
+                    <div class="flex space-x-4">
+                        <!-- Social Icons (Using simple SVGs/colors) -->
+                        <a href="#" class="text-gray-400 hover:text-primary-blue transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.258 1H1.742C1.332 1 1 1.332 1 1.742v20.516C1 22.668 1.332 23 1.742 23h20.516C22.668 23 23 22.668 23 22.258V1.742C23 1.332 22.668 1 22.258 1zM7 20v-9h-3v9h3zM5.5 8.5c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5 1.5.673 1.5 1.5-.673 1.5-1.5 1.5zM20 20v-8c0-2.222-1.778-4-4-4s-4 1.778-4 4v8h3v-7c0-1.111.889-2 2-2s2 .889 2 2v7h3z"></path></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-blue transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.924 4.924 0 00-8.384 4.499c-3.265-.165-6.195-1.734-8.146-4.102a4.928 4.928 0 00-.663 2.479c0 1.708.868 3.218 2.185 4.092a4.942 4.942 0 01-2.228-.616v.061c0 2.38 1.696 4.368 3.946 4.819a4.908 4.908 0 01-2.217.085 4.93 4.93 0 004.604 3.425 9.888 9.888 0 01-6.128 2.113c-.398 0-.79-.023-1.173-.069a13.924 13.924 0 007.549 2.217c9.052 0 14.01-7.502 14.01-14.01 0-.214-.005-.427-.015-.639A9.932 9.932 0 0024 4.557z"></path></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-blue transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.615 2.152a1.597 1.597 0 01.378 1.055v17.476a1.597 1.597 0 01-.378 1.055c-.244.225-.56.34-.91.34H5.295c-.35 0-.665-.115-.909-.34a1.597 1.597 0 01-.378-1.055V3.207a1.597 1.597 0 01.378-1.055c.244-.225.56-.34.91-.34h13.418c.35 0 .665.115.91.34zM10.998 16.992l5.07-3.951-5.07-3.951v7.902z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Services -->
+                <div class="space-y-4">
+                    <h5 class="text-lg font-semibold text-white mb-3">Services</h5>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#services" class="hover:text-primary-blue transition-colors">AI Brand Strategy</a></li>
+                        <li><a href="#services" class="hover:text-primary-blue transition-colors">Visual Identity</a></li>
+                        <li><a href="#services" class="hover:text-primary-blue transition-colors">Content Strategy</a></li>
+                        <li><a href="#services" class="hover:text-primary-blue transition-colors">Digital Transformation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Company -->
+                <div class="space-y-4">
+                    <h5 class="text-lg font-semibold text-white mb-3">Company</h5>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#about" class="hover:text-primary-blue transition-colors">About Us</a></li>
+                        <li><a href="#portfolio" class="hover:text-primary-blue transition-colors">Portfolio</a></li>
+                        <li><a href="#blog" class="hover:text-primary-blue transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-primary-blue transition-colors">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact -->
+                <div class="space-y-4">
+                    <h5 class="text-lg font-semibold text-white mb-3">Contact</h5>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><p class="font-medium text-white">+91 9876543210</p></li>
+                        <li><a href="mailto:consultancy@aigobranding.com" class="hover:text-primary-blue transition-colors">consultancy@aigobranding.com</a></li>
+                        <li>Mon - Fri: 9:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="mt-12 pt-8 border-t border-slate-800 text-center">
+                <p class="text-sm text-gray-500">
+                    &copy; 2024 AIGO Branding Consultancy. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
